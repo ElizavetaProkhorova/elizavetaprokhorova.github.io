@@ -3,58 +3,149 @@ body {
 }
 
 header {
-    background: #00b0d800 url(изображения/шапка.jpg) repeat-x;
+    background: #00b0d800 url(изображения/шапка.jpg) no-repeat;
 }
 
 .container{
     margin: 0 auto; 
     max-width: 70%;
+    padding-top: 1rem;
 }
 
+.links-container a {
+    font-size: 150%;
+    display: block;
+    margin: 1.5rem;
+}
 
 .logo {
   display: inline-block;
   background: none;
   color: rgb(220, 238, 255);
-  padding: 2rem 4rem 0 13rem;
+  padding: 1.5rem 0 0 13rem;
   font-size: 200%;
+  font-family: "Playfair Display", serif;;
 }
 
 nav {
     display: inline;
    float: right;
-   margin: 2rem 13rem 0 0;
-   justify-content: space-between;
+   margin: 2.7rem 16rem 0 0;
+}
+
+.nav-items {
+    font-size: 150%;
+    display: inline-block;
+}
+
+ nav a:link { 
+    color: rgb(220, 238, 255); 
+    text-decoration: none;
+    margin-right: 3.5rem;
+}
+
+nav a:vizited {
+    color: rgb(89, 175, 255);
+    text-decoration: none;
 }
 
 .first {
     display: flex;
     justify-content: space-around;
-
 }
 
 .second {
-    padding: 7rem 50% 0 3rem;
-    
+    padding: 7rem 15% 7rem 13rem;
+    font-size: larger;
 }
+
 
 h1 {
     color: rgb(220, 238, 255);
     font-size: 300%;
+    font-family: "Playfair Display", serif;;
 }
 
 h2 {
     color: rgb(220, 238, 255);
     font-size: 217%;
+    font-family: "Playfair Display", serif;;
 }
 
+h3 {
+    font-size: 180%;
+}
+
+p {
+    font-size: 150%;
+}
 figure {
-    margin: 3rem 3rem 0 0;
+    margin: 3rem 8rem 0 0;
     position: absolute;
     right: 220px;
 }
 
-.last-container {
+button {
+    font-size: 130%;
+    border: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: rgb(57, 124, 212);
+    margin: 1rem 4rem 3rem auto;
+    display: flex;
+    text-decoration: none;
+    border-radius: 17px;
+
+    &:hover {
+      background-color: rgb(17, 46, 83);
+      color: aliceblue;
+    }
+
+    &:active {
+        opacity: 1.5;
+    }
+}
+
+.main-container {
+    padding-left: 15%;
+    padding-right: 47%;
+}
+
+.pictures {
     margin: 0 auto; 
     max-width: 70%;
+    padding-bottom: 1.5rem;
+}
+
+.links-container {
+padding-top: 1.5rem;
+
+   & a {
+     font-size: 150%;
+     display: block;
+     margin: 2rem;
+     text-decoration: none;
+    }
+}
+
+.last-container {
+    padding-top: 2rem;
+    width: 100%;
+    margin-right: 6rem;
+
+    & label {
+        font-size: 150%;
+    }
+    
+    & input {
+        font-size: 150%;
+    }
+}
+
+.d-last {
+    display: flex;
+    margin: 0 auto; 
+    max-width: 70%;
+    min-width: 50rem;
+    min-height: auto;
+    justify-content: space-between;
 }

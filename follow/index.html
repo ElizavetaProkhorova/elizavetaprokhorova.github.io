@@ -12,10 +12,15 @@
     <header class="header">
         <a href="index.html"><div class="logo">Stingray</div></a>
             <nav class="nav-items">
-                <a href="#Skills">skills</a>
-                <a href="#Portfolio">portfolio</a>
-                <a href="#Contacts">social media</a>
-                <a href="#form">write me</a>
+                
+                    <a href="skills.html">skills</a>        
+
+                    <a href="portfolio.html">portfolio</a>
+
+                    <a href="#Contacts">social media</a>
+
+                    <a href="#form">write me</a>
+
             </nav>
 
         <div class="first">
@@ -25,7 +30,7 @@
             </div>
             
             <figure>
-                <img src="./изображения/временный аватар.jpg" alt="Аватар" height="500px">
+                <img src="./изображения/временный аватар.jpg" alt="Аватар" height="670px">
             </figure>
         </div>
 
@@ -52,43 +57,57 @@
                     laboriosam beatae, labore similique deleniti optio minus non consequuntur maxime corporis
                     necessitatibus quidem?</p>
                     
-                   <button>
-                       <a href="#">Подробнее</a>  
-                   </button> 
-                    
+                    <form id="skills.html">
+                        <button>more detailed</button>
+                      </form>
+                      
 
             </div>
         </section>
 
         <section id="#Portfolio">
-            <div class="container">
+            <div class="pictures">
                 <h3>Portfolio</h3>
-                <a href="#"><img src="./изображения/1.jpg" alt="Illustrations" height="350px"></a>  
-                <a href="#"><img src="./изображения/2.jpg" alt="Designs" height="350px"></a>  
-                <a href="#"><img src="./изображения/3.jpg" alt="3D" height="350px"></a>  
+                <a href="#"><img src="./изображения/1.jpg" alt="Illustrations" height="380px"></a>  
+                <a href="#"><img src="./изображения/2.jpg" alt="Designs" height="380px"></a>  
+                <a href="#"><img src="./изображения/3.jpg" alt="3D Modeling" height="380px"></a>  
             </div>
         </section>
 
-        <section id="#Contacts">
-            <div class="container">
-                <h3>Social media</h3>
-            
-                    <a href="#VK">VK</a>
-               
-                    <a href="#Instagram">Instagram</a>
-              
-                    <a href="#Boosty">Boosty</a>
-                
-                    <a href="#Telegram">Telegram</a>
-               
-            </div>
-        </section>
-
-        <section id="#form"> 
-            <div class="last-container">
-            <h3>Write me</h3>
-            </div>
-        </section>
+       <div class="d-last">
+           <section id="#Contacts">
+               <div class="links-container">
+                   <h3>Social media</h3>
+                          <a href="#VK">VK</a>
+                     
+                          <a href="#Instagram">Instagram</a>
+                    
+                          <a href="#Boosty">Boosty</a>
+                      
+                          <a href="#Telegram">Telegram</a>
+               </div>
+           </section>
+   
+           <section id="#form"> 
+               <div class="last-container">
+               <h3>Write me</h3>
+               <form name="signup" action="#" method="post">
+                   <div>
+                       <label for="">enter your email</label>
+                       <input type="email" name="emailadress">
+                   </div class= "radio">
+                   <input type="radio" name="work" value="0">Illustration
+                   <input type="radio" name="work" value="1">Design
+                   <input type="radio" name="work" value="2">3D Modeling
+                   <div>
+                       <label for="">enter your wish</label>
+                      <textarea name="text" id="" cols="40" rows="3"></textarea>
+                   </div>
+                   <input type="submit" name="signup" value="send">
+               </form>
+               </div>
+           </section>
+       </div>
 
     </main>
 
