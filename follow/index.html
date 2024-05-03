@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liza's place</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900
+    &family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html"><div class="logo">Stingray</div></a>
-            <nav class="nav-items">
-                
-                    <a href="skills.html">skills</a>        
+        <a href="index.html">
+            <div class="logo">Stingray</div>
+        </a>
+        <nav class="nav-items">
 
-                    <a href="portfolio.html">portfolio</a>
+            <a href="skills.html">skills</a>
 
-                    <a href="#Contacts">social media</a>
+            <a href="portfolio.html">portfolio</a>
 
-                    <a href="#form">write me</a>
+            <a href="Contacts">social media</a>
 
-            </nav>
+            <a href="Form">write me</a>
+
+        </nav>
 
         <div class="first">
             <div class="second">
                 <h1>Prokhorova Elizaveta</h1>
                 <h2>Illustrator & graphic designer</h2>
             </div>
-            
+
             <figure>
                 <img src="./изображения/временный аватар.jpg" alt="Аватар" height="670px">
             </figure>
@@ -48,7 +54,7 @@
             </div>
         </section>
 
-        <section id="#Skills">
+        <section id="Skills">
             <div class="container">
                 <h3>My skills</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam veritatis quod ratione ab aperiam
@@ -56,58 +62,81 @@
                     itaque, est explicabo repellendus quo doloribus distinctio voluptatem. Aliquid in, tempore,
                     laboriosam beatae, labore similique deleniti optio minus non consequuntur maxime corporis
                     necessitatibus quidem?</p>
-                    
-                    <form id="skills.html">
-                        <button>more detailed</button>
-                      </form>
-                      
+
+                <form>
+                    <button class="detailes">more detailed</button>
+                </form>
+
 
             </div>
         </section>
 
-        <section id="#Portfolio">
+        <section id="Portfolio">
             <div class="pictures">
                 <h3>Portfolio</h3>
-                <a href="#"><img src="./изображения/1.jpg" alt="Illustrations" height="380px"></a>  
-                <a href="#"><img src="./изображения/2.jpg" alt="Designs" height="380px"></a>  
-                <a href="#"><img src="./изображения/3.jpg" alt="3D Modeling" height="380px"></a>  
+
+                <a href="#"><img src="./изображения/1.jpg" alt="Illustrations" height="405px"></a>
+
+                <a href="#"><img src="./изображения/2.jpg" alt="Designs" height="405px"></a>
+
+                <a href="#"><img src="./изображения/3.jpg" alt="3D Modeling" height="405px"></a>
+
             </div>
         </section>
 
-       <div class="d-last">
-           <section id="#Contacts">
-               <div class="links-container">
-                   <h3>Social media</h3>
-                          <a href="#VK">VK</a>
-                     
-                          <a href="#Instagram">Instagram</a>
-                    
-                          <a href="#Boosty">Boosty</a>
-                      
-                          <a href="#Telegram">Telegram</a>
-               </div>
-           </section>
-   
-           <section id="#form"> 
-               <div class="last-container">
-               <h3>Write me</h3>
-               <form name="signup" action="#" method="post">
-                   <div>
-                       <label for="">enter your email</label>
-                       <input type="email" name="emailadress">
-                   </div class= "radio">
-                   <input type="radio" name="work" value="0">Illustration
-                   <input type="radio" name="work" value="1">Design
-                   <input type="radio" name="work" value="2">3D Modeling
-                   <div>
-                       <label for="">enter your wish</label>
-                      <textarea name="text" id="" cols="40" rows="3"></textarea>
-                   </div>
-                   <input type="submit" name="signup" value="send">
-               </form>
-               </div>
-           </section>
-       </div>
+        <div class="d-last">
+            <section id="Contacts">
+                <div class="links-container">
+                    <h3>Social media</h3>
+                    <div class="contant">
+                        <p><a href="#VK">VK</a>- the main content, all news and announcements for Russian-speaking users
+                        </p>
+                    </div>
+
+                    <div class="contant">
+                        <p><a href="#Instagram">Instagram</a>- the main content, all news and announcements for
+                            English-speaking users</p>
+                    </div>
+
+                    <div class="contant">
+                        <p><a href="#Telegram">Telegram</a>- special content for Russian-speaking subscribers,
+                            additional materials and tutorials</p>
+                    </div>
+
+                    <div class="contant">
+                        <p><a href="#Boosty">Boosty</a>- premium content, tutorials, special news and announcements for
+                            all subscribers</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Form">
+
+                <div class="last-container">
+                    <h3 class="formtitle">Write me</h3>
+
+                    <form class="form">
+                        <div>
+                            <div class="email">
+                                <label for="">enter your email</label>
+                                <input type="email" name="emailadress">
+                            </div>
+
+                            <div class="wish">
+                                <label for="">enter your wish</label>
+                                <input type="wish" name="letter">
+                            </div>
+
+                        </div>
+
+                        <button class="formbuttom">send</button>
+
+                    </form>
+
+                </div>
+
+            </section>
+        </div>
 
     </main>
 

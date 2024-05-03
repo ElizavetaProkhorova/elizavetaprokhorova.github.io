@@ -1,15 +1,22 @@
 body {
-    background-color: rgb(220, 238, 255);
+    background-color: rgb(175, 197, 218);
 }
 
 header {
     background: #00b0d800 url(изображения/шапка.jpg) no-repeat;
+    position: static;
 }
 
 .container{
     margin: 0 auto; 
     max-width: 70%;
     padding-top: 1rem;
+
+    & p {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: italic;
+    }
 }
 
 .links-container a {
@@ -22,19 +29,23 @@ header {
   display: inline-block;
   background: none;
   color: rgb(220, 238, 255);
-  padding: 1.5rem 0 0 13rem;
+  padding: 1.5rem 0 0 5rem;
   font-size: 200%;
-  font-family: "Playfair Display", serif;;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 nav {
     display: inline;
    float: right;
-   margin: 2.7rem 16rem 0 0;
+   margin: 2.7rem 5rem 0 0;
 }
 
 .nav-items {
     font-size: 150%;
+    font-family: "Playfair Display", serif;
     display: inline-block;
 }
 
@@ -55,7 +66,7 @@ nav a:vizited {
 }
 
 .second {
-    padding: 7rem 15% 7rem 13rem;
+    padding: 7rem 10% 7rem 7rem;
     font-size: larger;
 }
 
@@ -63,37 +74,46 @@ nav a:vizited {
 h1 {
     color: rgb(220, 238, 255);
     font-size: 300%;
-    font-family: "Playfair Display", serif;;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 1px;
 }
 
 h2 {
     color: rgb(220, 238, 255);
     font-size: 217%;
-    font-family: "Playfair Display", serif;;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    letter-spacing: 0.5px;
+
 }
 
 h3 {
-    font-size: 180%;
+    font-size: 195%;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 p {
     font-size: 150%;
 }
+
 figure {
-    margin: 3rem 8rem 0 0;
+    margin: 5rem 8rem 0 0;
     position: absolute;
     right: 220px;
 }
 
-button {
-    font-size: 130%;
+.detailes {
+    font-size: 135%;
+    font-family: "Playfair Display", serif;
     border: none;
     padding: 1rem 1.5rem 1rem 1.5rem;
-    background-color: rgb(57, 124, 212);
+    background-color: rgb(112, 174, 255);
     margin: 1rem 4rem 3rem auto;
     display: flex;
     text-decoration: none;
-    border-radius: 17px;
 
     &:hover {
       background-color: rgb(17, 46, 83);
@@ -108,12 +128,17 @@ button {
 .main-container {
     padding-left: 15%;
     padding-right: 47%;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .pictures {
     margin: 0 auto; 
     max-width: 70%;
     padding-bottom: 1.5rem;
+    display: block;
+    justify-content: space-between;
 }
 
 .links-container {
@@ -121,24 +146,104 @@ padding-top: 1.5rem;
 
    & a {
      font-size: 150%;
-     display: block;
-     margin: 2rem;
+     display: inline;
+     width: 7rem;
      text-decoration: none;
-    }
+     font-family: "Merriweather", serif;
+     font-weight: 400;
+     font-style: italic;
+     color: rgb(5, 19, 31);
+   }
+}
+
+.links-container p {
+    width: 75%;
+    height: 120%;
+    display: flex;
+    float: right;
+    align-items: start;
+    position: static;
+    margin: auto 13rem 1.5rem 3rem;
+    font-size: 120%;
+    font-family: "Playfair Display", serif;
+    
+}
+
+
+.links-container a:visited {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+  color: rgb(83, 118, 148);
+    
+}
+
+.contant {
+    margin: 0 0 2rem 0;
 }
 
 .last-container {
-    padding-top: 2rem;
-    width: 100%;
-    margin-right: 6rem;
+    margin-top: 4rem;
+}
+
+.form {
+    width: 350px;
+    margin: 0 5rem 0 2rem;
+    font-size: 135%;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+
+    & input {
+        width: 100%;
+        padding: 0 0 7px 0;
+        font-family: "Merriweather", serif;
+        font-size: 110%;
+        font-weight: 300;
+        font-style: italic;
+        color: rgb(5, 19, 31);
+        border: none;
+        border-bottom: 1.5px solid rgb(83, 118, 148);
+        background-color: transparent;
+        outline: none;
+        transition: 0.3s;
+    }
 
     & label {
-        font-size: 150%;
+        position: flex;
+        margin: 1rem 0 1rem 0;
+        color:rgb(58, 95, 143);
+        transition: 0.3s;
     }
-    
-    & input {
-        font-size: 150%;
-    }
+}
+ 
+.form input:focus {
+    border-bottom: 1.5px solid rgb(5, 19, 31);
+}
+
+.email {
+    margin: 0 0 2rem 0;
+}
+
+.formbuttom {
+    font-size: 105%;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    border: none;
+    padding: 0.8rem 1.5rem 1rem 1.5rem;
+    background-color: rgb(112, 174, 255);
+    display: flex;
+    text-decoration: none;
+    margin: 3rem 1rem;
+    float: right;
+
+    &:hover {
+        background-color: rgb(17, 46, 83);
+        color: aliceblue;
+      }
+  
+      &:active {
+          opacity: 1.5;
+      }
 }
 
 .d-last {
