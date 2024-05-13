@@ -1,6 +1,21 @@
 body {
   background-color: rgb(12, 25, 43);
 }
+
+.logo {
+  display: flex;
+  background: none;
+  color: rgb(220, 238, 255);
+  padding: 1rem 0 0 2rem;
+  font-size: 180%;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-underline-position: hidden;
+}
+
   .container {
     padding: 2rem;
   }

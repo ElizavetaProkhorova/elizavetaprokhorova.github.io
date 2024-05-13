@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background: #00b0d800 url(изображения/шапка.jpg) no-repeat;
+    background: #00b0d800 url(images/шапка.jpg) no-repeat;
     position: static;
 }
 
@@ -23,7 +23,7 @@ header {
 .links-container a {
     font-size: 150%;
     display: block;
-    margin: 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .logo {
@@ -110,12 +110,13 @@ a.detailes {
     font-size: 135%;
     font-family: "Playfair Display", serif;
     border: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 0.5rem 1rem 1.5rem;
     background-color: rgb(112, 174, 255);
     margin: 1rem 4rem 3rem auto;
     display: flex;
     text-decoration: none;
-    max-width: 15%;
+    max-width: 12%;
+    color: rgb(5, 19, 31);
 
     &:hover {
       background-color: rgb(17, 46, 83);
@@ -125,6 +126,7 @@ a.detailes {
     &:active {
         opacity: 1.5;
     }
+
 }
 
 .main-container {
@@ -181,7 +183,7 @@ padding-top: 1.5rem;
 }
 
 .contant {
-    margin: 0 0 2rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .last-container {
