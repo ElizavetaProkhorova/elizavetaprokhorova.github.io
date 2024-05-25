@@ -1,12 +1,12 @@
 body {
     background-color: rgb(175, 197, 218);
+    margin: 0;
 }
 
 header {
-    background: #00b0d800 url(изображения/шапка.jpg) no-repeat;
+    background: #00b0d800 url(images/head.png) no-repeat;
     position: static;
-    height: 8rem;
-}
+    height: 140px}
 
 .logo {
     display: inline-block;
@@ -90,5 +90,8 @@ td {
 
 footer {
     margin: 4rem auto auto 1rem;
-    font-size: 150%;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 115%;
 }
